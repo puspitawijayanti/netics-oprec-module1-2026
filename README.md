@@ -291,6 +291,7 @@ Untuk menjalankan ci-cd nya, sebelumnya perlu mendapatkan beberapa credential un
 https://gist.github.com/unixcharles/949271  
 https://github.com/oneuptime/blog/tree/master/posts/2026-02-21-ansible-configure-reverse-proxy-nginx  
 https://flask.palletsprojects.com/en/stable/quickstart/  
+https://github.com/appleboy/ssh-action
 https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy  
 https://github.com/arsitektur-jaringan-komputer/modul-ansible/blob/master/2.%20Ansible%20Playbook/README.md  
 https://github.com/geerlingguy/ansible-role-nginx  

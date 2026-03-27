@@ -237,20 +237,20 @@ File `ci-cd.yml` ini berisi konfigurasi GitHub Actions untuk otomatisasi deploy 
 ## Preparation
 Untuk menjalankan ci-cd nya, sebelumnya perlu mendapatkan beberapa credential untuk menjalankan github actions nya. 
 
-1. generate SSH key khusus GitHub Actions
+1. generate SSH key khusus GitHub Actions  
     di terminal lokal dibuat SSH key baru yang dikhususkan untuk keperluan deploy saja. Command ini akan menghasilkan 2 file, yaitu file untuk private key (~/.ssh/netics_actions.pub) dan public key (~/.ssh/netics_actions.pub).  
     ```C
     ssh-keygen -t rsa -b 4096 -f ~/.ssh/netics_actions -N ""
     ```
     ![](/media/[4]%201.png)  
 
-2. menambahkan public key ke VPS
+2. menambahkan public key ke VPS  
     setelah key tersebut berhasil dibuat, public key tersebut disalin ke VPS agar GitHub Actions diberikan izin untuk masuk ke server. Command `ssh-copy-id` akan secara otomatis menambahkan public key ke file `~/.ssh/authorized_keys` di VPS.
     ```c
     ssh-copy-id -i ~/.ssh/netics_actions.pub azureuser@70.153.137.19
     ```
 
-3. lalu menbuat konfigurasi folder SSH di VPS
+3. lalu menbuat konfigurasi folder SSH di VPS  
     selanjutnya masuk ke VPS dan menjalankan command di bawah untuk memastikan folder SSH secure dan untuk menghindari error connection karena masalah permission:
     ```c
     mkdir -p ~/.ssh
@@ -261,7 +261,7 @@ Untuk menjalankan ci-cd nya, sebelumnya perlu mendapatkan beberapa credential un
     ![](/media/[4].png)
     ![](/media/[4]%203.png)  
 
-4. Menambahkan secrets ke github action
+4. Menambahkan secrets ke github action  
     di state ini credentials yang telah dipunya diinsert ke github pada page actions (`/settings/secrets/actions`)
     
     ```

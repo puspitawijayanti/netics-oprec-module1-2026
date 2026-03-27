@@ -43,7 +43,7 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          source: "src,deploy.sh,README.md"
+          source: "src"
           target: "~/app"
           rm: true
 
@@ -54,5 +54,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            chmod +x ~/app/deploy.sh
-            ~/app/deploy.sh
+            cd ~/app
+            docker rm -f netics-api || true
+            docker build -t netics-health-api ./src
+            docker run -d --name netics-api -p 3000:3000 netics-health-api

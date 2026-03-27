@@ -276,7 +276,7 @@ Untuk menjalankan ci-cd nya, sebelumnya perlu mendapatkan beberapa credential un
     ![](/media/[4]%202.png)  
 
 
-5. commit project ke repository github
+5. commit project ke repository github  
     pada state ini, setelah perubahan di-commit dan di-push ke branch main github, workflow deployment nya akan berjalan secara otomatis. Saat indikator di tab Actions statusnya success, endpoint API bisa langsung diakses menggunakan versi code terbaru tanpa perlu deploy manual.  
     ![](/media/[4]%204.png)  
 

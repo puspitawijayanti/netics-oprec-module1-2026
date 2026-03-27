@@ -4,9 +4,9 @@
 ---
 ## Identity
 
-Puspita Wijayanti Kusuma  
-5025241059
-
+Puspita Wijayanti Kusuma    
+5025241059    
+URL API: http://70.153.137.19/health    
 ---
 
 ## Soal 1
@@ -289,6 +289,7 @@ http://70.153.137.19/health
 ## Credits and Citation
 **Repository / Documentation**  
 https://gist.github.com/unixcharles/949271  
+https://github.com/miraicantsleep/penugasan1-netics-cicd  
 https://github.com/oneuptime/blog/tree/master/posts/2026-02-21-ansible-configure-reverse-proxy-nginx  
 https://flask.palletsprojects.com/en/stable/quickstart/  
 https://github.com/appleboy/ssh-action

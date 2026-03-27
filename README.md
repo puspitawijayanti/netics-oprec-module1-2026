@@ -281,7 +281,7 @@ Untuk menjalankan ci-cd nya, sebelumnya perlu mendapatkan beberapa credential un
     ![](/media/[4]%204.png)  
 
 ### Result
-
+http://70.153.137.19/health
 ![](/media/[3]%203.png)  
 
 

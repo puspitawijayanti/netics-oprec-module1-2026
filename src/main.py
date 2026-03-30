@@ -24,7 +24,7 @@ def health_check():
     return {
         "nama": "Puspita Wijayanti Kusuma",
         "nrp": "5025241059", 
-        "status": "UP",
+        "status": "TEST",
         "timestamp": timeNow,
         "uptime": uptime_format
     }
